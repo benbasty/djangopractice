@@ -11,11 +11,11 @@
         </tr>
         <tr>
           {% for flight in flights %}
-          <td>{{ flight.id }}</td>
+          <td><a href="{% url 'flight' flight.id %}">{{ flight.id }}</a></td>
           <td>{{ flight.origin }}</td>
           <td>{{ flight.destination }}</td>
           <td>{{ flight.duration }}</td>
         </tr>
           {% endfor %}
-      </table>
+    </table>
 {% endblock%}
