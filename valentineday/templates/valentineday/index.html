@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'valentineday/styles.css' %}">
+    <title>Is today Valentine's Day?</title>
+</head>
+<body>
+    <h1>Is today Valentine's Day?</h1>
+    {% if valentineday %}
+        <p>Yes, today is Valentine's Day! Happy Valentine's Day!</p>
+    {% else %}
+        <p>No, today is not Valentine's Day. Better luck next year!</p>
+    {% endif %}
+</body>
+</html>
